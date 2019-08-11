@@ -1,59 +1,9 @@
 body {
     font-family: "Lato", sans-serif;
-}
-
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-}
-
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    white-space: nowrap;
-}
-
-.sidebar a:hover {
-    color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-}
-
-.openbtn:hover {
-    background-color: #444;
+    background-color: #ddd;
 }
 
 #main {
-    transition: margin-left .5s;
     padding: 20px;
 }
 
@@ -76,4 +26,43 @@ body {
 @media screen and (max-height: 450px) {
     .sidebar { padding-top: 15px; }
     .sidebar a { font-size: 18px; }
+}
+
+/* Hoverable Sidenav */
+
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+    background-color: black;
+}
+
+i {
+    color: steelblue;
+}
+
+#mySidenav a i {
+    position: relative;
+    left: 75px;
+}
+
+#mySidenav a:hover {
+    left: -60px;
+}
+
+#read {
+    top: 20px;
+}
+
+#upload {
+    top: 80px;
+}
+
+#cogs {
+    top: 140px;
 }
