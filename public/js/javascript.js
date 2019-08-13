@@ -1,10 +1,24 @@
-function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+function onReadClick() {
+    document.getElementById("for_reading").style.display = "inline";
+    document.getElementById("for_uploading").style.display = "none";
+    document.getElementById("for_settings").style.display = "none";
 }
 
-function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+function onUploadClick() {
+    document.getElementById("for_reading").style.display = "none";
+    document.getElementById("for_uploading").style.display = "inline";
+    document.getElementById("for_settings").style.display = "none";
 }
+
+function onCogsClick() {
+    document.getElementById("for_reading").style.display = "none";
+    document.getElementById("for_uploading").style.display = "none";
+    document.getElementById("for_settings").style.display = "inline";
+}
+
+function fileAdded() {
+    document.getElementById("output").innerHTML = "Файл выбран."
+}
+ 
+
 

@@ -11,26 +11,90 @@ body {
     text-align: center;
 }
 
+#for_reading {
+    display: none;
+}
+
+#for_uploading {
+    display: inline;
+    text-align: center;
+}
+
+/* For Reading Page */
+
 #textplace {
     width: 60%;
     margin: auto;
     border: hidden;
 }
 
-#textplace pre {
-    word-wrap: break-word; 
-    word-break: keep-all;
+/* For Uploading Page */
 
+i, 
+input,
+input + label {
+    color: steelblue;
 }
 
-@media screen and (max-height: 450px) {
-    .sidebar { padding-top: 15px; }
-    .sidebar a { font-size: 18px; }
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    width: 22%;
+    margin: auto;
+    /* max-width: 100%; */
+    font-size: 1.25rem;
+    font-weight: 700;
+    /* white-space: nowrap; */
+    display: block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* text-align: center; */
+}
+
+.inputfile + label i {
+    /* fill: currentColor; */
+    /* width: 100%; */
+    height: 135px;
+    /* background-color: transparent; */
+    display: block;
+    position: relative;
+    padding: 30px 0 0 0;
+    /* border-radius: 50%; */
+    margin: 0 auto 10px;
+}
+
+.inputfile:focus + label i,
+.inputfile.has-focus + label i,
+.inputfile + label:hover,
+.inputfile + label:hover i {
+    color: #2b71aa;
+}
+
+.inputfile + label .fas {
+    font-size: 100px;
+}
+
+input[type=submit] {
+    margin: 30px;
+    color: steelblue;
+    width: 30%;
+    font-weight: 800;
+    font-size: 2em;
+    border: 3px solid steelblue;
+    border-radius: 5px;
+    background-color: #ccc;
 }
 
 /* Hoverable Sidenav */
 
-#mySidenav a {
+#mySidenav span {
     position: absolute;
     left: -80px;
     transition: 0.3s;
@@ -42,16 +106,12 @@ body {
     background-color: black;
 }
 
-i {
-    color: steelblue;
-}
-
-#mySidenav a i {
+#mySidenav span i {
     position: relative;
     left: 75px;
 }
 
-#mySidenav a:hover {
+#mySidenav span:hover {
     left: -60px;
 }
 

@@ -1,0 +1,19 @@
+{
+  "name": "new_read_me",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "test": "go"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siniy-Vyacheslav/Site_For_Reading.git"
+  },
+  "author": "Vyacheslav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Siniy-Vyacheslav/Site_For_Reading/issues"
+  },
+  "homepage": "https://github.com/Siniy-Vyacheslav/Site_For_Reading#readme"
+}
