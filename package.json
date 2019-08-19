@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "none",
   "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  },
   "scripts": {
     "test": "go"
   },
@@ -15,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/Siniy-Vyacheslav/Site_For_Reading/issues"
   },
-  "homepage": "https://github.com/Siniy-Vyacheslav/Site_For_Reading#readme"
+  "homepage": "https://github.com/Siniy-Vyacheslav/Site_For_Reading#readme",
+  "devDependencies": {}
 }

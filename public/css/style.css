@@ -3,98 +3,29 @@ body {
     background-color: #ddd;
 }
 
-#main {
-    padding: 20px;
-}
-
-#main h2 {
-    text-align: center;
-}
-
-#for_reading {
-    display: none;
-}
-
-#for_uploading {
-    display: inline;
-    text-align: center;
-}
-
-/* For Reading Page */
-
-#textplace {
-    width: 60%;
-    margin: auto;
-    border: hidden;
-}
-
-/* For Uploading Page */
-
 i, 
 input,
 input + label {
     color: steelblue;
 }
 
-.inputfile {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-}
-
-.inputfile + label {
-    width: 22%;
+main {
+    padding: 20px;
+    background-color: white;
+    width: 70%;
     margin: auto;
-    /* max-width: 100%; */
-    font-size: 1.25rem;
-    font-weight: 700;
-    /* white-space: nowrap; */
-    display: block;
-    overflow: hidden;
-    padding: 0.625rem 1.25rem;
-    /* text-align: center; */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 grey;
 }
 
-.inputfile + label i {
-    /* fill: currentColor; */
-    /* width: 100%; */
-    height: 135px;
-    /* background-color: transparent; */
-    display: block;
-    position: relative;
-    padding: 30px 0 0 0;
-    /* border-radius: 50%; */
-    margin: 0 auto 10px;
-}
-
-.inputfile:focus + label i,
-.inputfile.has-focus + label i,
-.inputfile + label:hover,
-.inputfile + label:hover i {
-    color: #2b71aa;
-}
-
-.inputfile + label .fas {
-    font-size: 100px;
-}
-
-input[type=submit] {
-    margin: 30px;
-    color: steelblue;
-    width: 30%;
-    font-weight: 800;
-    font-size: 2em;
-    border: 3px solid steelblue;
-    border-radius: 5px;
-    background-color: #ccc;
+header {
+    text-align: center;
 }
 
 /* Hoverable Sidenav */
 
-#mySidenav span {
+#mySidenav a {
     position: absolute;
     left: -80px;
     transition: 0.3s;
@@ -104,14 +35,15 @@ input[type=submit] {
     font-size: 20px;
     border-radius: 0 5px 5px 0;
     background-color: black;
+    cursor: pointer;
 }
 
-#mySidenav span i {
+#mySidenav a i {
     position: relative;
     left: 75px;
 }
 
-#mySidenav span:hover {
+#mySidenav a:hover {
     left: -60px;
 }
 

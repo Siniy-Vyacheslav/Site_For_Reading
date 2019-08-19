@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Загрузи</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/for_upload.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+    <% include ../templates/navigation.ejs %>
+
+    <header>Загрузи <i class="fas fa-upload"></i></header>
+    
+    <main>
+        <div id="for_uploading">
+            <p>Загрузи, что хочешь, и читай на здоровье.</p>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" id="file" class="inputfile" onchange="fileAdded()" />
+                <label for="file">
+                    <i class="fas fa-upload"></i>
+                    <span id="output">Выбери файл.</span>
+                </label>
+                <button id="uploadButton">Загрузи</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/javascript.js"></script>
+</body>
+</html>

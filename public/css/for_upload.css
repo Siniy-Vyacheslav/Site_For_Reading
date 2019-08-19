@@ -1,0 +1,58 @@
+/* For Uploading Page */
+
+#for_uploading {
+    display: inline;
+    text-align: center;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    width: 22%;
+    margin: auto;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+}
+
+.inputfile + label i {
+    height: 135px;
+    display: block;
+    position: relative;
+    padding: 30px 0 0 0;
+    margin: 0 auto 10px;
+}
+
+.inputfile:focus + label i,
+.inputfile.has-focus + label i,
+.inputfile + label:hover,
+.inputfile + label:hover i {
+    color: #2b71aa;
+}
+
+.inputfile + label .fas {
+    font-size: 100px;
+}
+
+button {
+    margin: 30px;
+    color: steelblue;
+    width: 30%;
+    font-weight: 800;
+    font-size: 2em;
+    border: 3px solid steelblue;
+    border-radius: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+    outline: none;
+}

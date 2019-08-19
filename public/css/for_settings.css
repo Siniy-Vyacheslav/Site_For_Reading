@@ -1,0 +1,108 @@
+.word {
+    font-size: 25px;
+    margin: 4px 0 4px 20px;
+}
+
+/* FontFamily */
+
+#fontFamily {
+    margin-left: 20px;
+    text-align: center;
+    overflow: auto;
+    vertical-align: baseline;
+    display: flex;
+}
+
+#fontFamily i.fas {
+    font-size: 40px;
+    height: 40px;
+}
+
+/* Background Color */
+
+#backgroundColor {
+    margin-left: 20px;
+    display: flex;
+}
+
+.back {
+    width: 24px;
+    height: 24px;
+    border: 2px solid steelblue;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
+#white {
+    background-color: white;
+}
+
+#wheat {
+    background-color: wheat;
+}
+
+#black {
+    background-color: black;
+}
+
+#grey {
+    background-color: grey;
+}
+
+/* String Length */
+
+#stringLength {
+    margin-left: 20px;
+    display: flex;
+}
+
+#stringLengthWrapper {
+    position: relative;
+    /* background: red; */
+
+}
+
+#kr {
+    position: absolute;
+    left: 2px;
+}
+
+#sr {
+    position: absolute;
+    left: 57px;
+}
+
+#dl {
+    position: absolute;
+    right: -2px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    color: steelblue;
+    outline: none;
+    /* background-color: red; */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: steelblue;
+    border-radius: 50%;
+    transition: 1s;
+} 
+
+input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background-color: white;
+    height: 10.5px;
+    margin: 5px 0 5px 0;
+    border-bottom: 4px solid black;
+}
+
+
+
+
+

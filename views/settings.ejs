@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Настойки</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/for_settings.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+    <% include ../templates/navigation.ejs %>
+
+    <header>Настрой <i class="fas fa-cogs"></i></header>
+
+    <main>
+        <div id="for_settings">
+            <div class="cogs">
+                <span id="fontFamily">
+                    <i id="fontCh" class="fas fa-font"></i> 
+                    <p id="fontWord" class="word"> Шрифт</p>
+                </span>
+                
+                <hr />
+
+                <span id="backgroundColor">
+                    <span class="back" id="white"></span>
+                    <span class="back" id="wheat"></span>
+                    <span class="back" id="black"></span>
+                    <span class="back" id="grey"></span>
+                    <p id="backWord" class="word"> Стиль</p>
+                </span>
+
+                <hr />
+
+                <span id="stringLength">
+                    <span id="stringLengthWrapper">
+                        <span id="kr">Кр</span>
+                        <span id="sr">Ср</span>
+                        <span id="dl">Дл</span>
+                        <br>
+                        <input type="range" name="stringLength" id="stringLengthForm" min="0" max="2">        
+                    </span>
+                    <p id="lengthWord" class="word">Длина Строки</p>
+                </span>
+
+                <pre id="textplacee">
+                    Настойки:
+                    1. Свиток или книга
+                    2. Если книга, то одна или две страницы
+                    <!-- 3. Цвет фона -->
+                    5. Прогресс измениется нажатием
+                    <!-- 6. Шрифт -->
+                    7. Ширина строки
+                    8. Расстояние между строками
+                </pre>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/javascript.js"></script>
+</body>
+</html>
