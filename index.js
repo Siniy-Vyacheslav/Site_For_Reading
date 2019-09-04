@@ -47,8 +47,4 @@ app.post('/upload', (req, res) => {
     }
 });
 
-app.get('/settings', (req, res) => {
-    res.render('settings.ejs');
-});
-
 http.listen(3000);

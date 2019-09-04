@@ -8,23 +8,33 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/for_read.css">
+    <link rel="stylesheet" href="css/for_settings.css">
+
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
 <body>
-    <% include ../templates/navigation.ejs %>
-
-    <header>Читай <i class="fas fa-book-open"></i></header>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="read" onclick="openRead()"><i class="fas fa-book-open"></i></a>
+        <a href="/upload" id="upload"><i class="fas fa-upload"></i></a>
+        <a href="#" id="cogs" onclick="openCogs()"><i class="fas fa-cogs"></i></a>
+    </div>
 
     <main id="readBack">
-        <div id="for_reading">
+        <header>Читай <i class="fas fa-book-open"></i></header>
+
+        <!-- <div id="forReading"> -->
             <div id="textplace">
-                <pre id="text"><%= text %></pre>
+                <p id="text"><%= text %></p>
             </div>
-        </div>
+        <!-- </div> -->
     </main>
 
+    <% include ./settings.ejs %>
+
+    <script src="js/for_read.js"></script>
     <script src="js/javascript.js"></script>
+    
 </body>
 </html>
